@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: monastery360-frontend
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm run preview
+    autoDeploy: true
+    branch: main
+    rootDir: .
